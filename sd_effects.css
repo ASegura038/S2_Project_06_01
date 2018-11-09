@@ -15,6 +15,8 @@
 
 /* HTML Styles */
 
+/* Set the background image to a png and had the attachment fixed. the size of the background was set to 100% so that it covers the whole webpage. */
+
 html {
     background-image: url(sd_back1.png);
     background-attachment: fixed;
@@ -26,6 +28,8 @@ html {
 
 /* Body Styles */
 
+/* Added various radial gradients to add more to the theme by having them act as bright stars. had them in various areas on the webpage.  */
+
 body {
     background-image: url(sd_back2.png), radial-gradient(circle closest-corner at 40% 70%, white 15%, rgba(151, 151, 151, 0.5) 50%), radial-gradient(circle closest-corner at 80% 40%, white 15%, rgba(0, 0, 0, 0)30%), radial-gradient(circle closest-side at 10% 20%, white 20%, rgba(0, 0, 0, 0)45%), radial-gradient(5% 5% at 90% 10%, white 15%, rgba(0, 0, 0, 0)40%);
     background-color: rgb(151, 151, 151);
@@ -34,11 +38,15 @@ body {
 
 /* Navigation List Styles */
 
+/* here is where the nav got its purple tint border */
+
 body>header a {
     border: outset 5px rgb(211, 211, 255);
 }
 
 /* Section Left Styles */
+
+/* Change the font color of the text that was in the h1 as well as added a shadow on the text. Put an id and added a drop shadow which includes the rgba, grayscale, and opacity properties. added a filter with similiar contents and a transform property to rotate the portrait.  */
 
 h1 {
     color: rgb(211, 211, 211);
@@ -46,9 +54,9 @@ h1 {
 }
 
 #mportrait {
-    -webkit-filter: drop-shadow(-15px 0px 5px rgba(51, 51, 51, 0.9) grayscale(0.7) opacity(0.6));
-    filter: drop-shadow(-15px 0px 5px rgba(51, 51, 51, 0.9) grayscale(0.7) opacity(0.6));
-    transform: rotateY(180)
+    -webkit-filter: drop-shadow(-15px 0px 5px rgba(51, 51, 51, 0.9)) grayscale(0.7) opacity(0.6);
+    filter: drop-shadow(-15px 0px 5px rgba(51, 51, 51, 0.9)) grayscale(0.7) opacity(0.6);
+    transform: rotateY(180deg)
 }
 
 
